@@ -132,6 +132,7 @@ services:
     ports:
       - "${EIFFEL_RABBITMQ_WEB_EXTERNAL_PORT}:${EIFFEL_RABBITMQ_WEB_INTERNAL_PORT}"
       - "${EIFFEL_RABBITMQ_AMQP_EXTERNAL_PORT}:${EIFFEL_RABBITMQ_AMQP_INTERNAL_PORT}"
+      - 15675:15675
     networks:
           eiffel.0_1:
             aliases:
